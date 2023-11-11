@@ -1,0 +1,221 @@
+{% extends 'RUser/design.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 904px;
+    height: 202px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style6 {
+	font-size: 24px;
+	color: #FFFFFF;
+}
+.style8 {color: #FFFF00}
+        .style9 {color: #FFFF00; font-weight: bold; }
+        .style10 {color: #FF0000}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1"><span class="style6 style10">Chronic Kidney Disease  Stage</span> PREDICTION  !!! </p>
+                            <hr>
+
+                                <p>{% csrf_token %}                                </p>
+                                <p>&nbsp; </p>
+                                <table width="754" border="0" align="center">
+                                  <tr>
+                                    <td width="166" bgcolor="#FF0000"><div align="center" class="style8">Enter Reading Id </div></td>
+                                    <td width="228" bgcolor="#FF0000"><input name="Readingid" type="text"></td>
+                                    <td width="168" bgcolor="#FF0000"><span class="style9">Enter Age </span></td>
+                                    <td width="164" bgcolor="#FF0000"><input name="age" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter Bo </div></td>
+                                    <td bgcolor="#FF0000"><input name="bp" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter SG </span></td>
+                                    <td bgcolor="#FF0000"><input name="sg" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter Al </div></td>
+                                    <td bgcolor="#FF0000"><input name="al" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter SU </span></td>
+                                    <td bgcolor="#FF0000"><input name="su" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter RBC </div></td>
+                                    <td bgcolor="#FF0000"><input name="rbc" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter PC </span></td>
+                                    <td bgcolor="#FF0000"><input name="pc" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter PCC </div></td>
+                                    <td bgcolor="#FF0000"><input name="pcc" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter BA </span></td>
+                                    <td bgcolor="#FF0000"><input name="ba" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter BGR </div></td>
+                                    <td bgcolor="#FF0000"><input name="bgr" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter BU </span></td>
+                                    <td bgcolor="#FF0000"><input name="bu" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter SC </div></td>
+                                    <td bgcolor="#FF0000"><input name="sc" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter SOD </span></td>
+                                    <td bgcolor="#FF0000"><input name="sod" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter POT</div></td>
+                                    <td bgcolor="#FF0000"><input name="pot" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter Hemo </span></td>
+                                    <td bgcolor="#FF0000"><input name="hmo" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter PCV </div></td>
+                                    <td bgcolor="#FF0000"><input name="pcv" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter WC </span></td>
+                                    <td bgcolor="#FF0000"><input name="wc" type="text"></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter RC </div></td>
+                                    <td bgcolor="#FF0000"><input name="rc" type="text"></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter HTN </span></td>
+                                    <td bgcolor="#FF0000"><span class="style8">
+                                      <select name="hin">
+                                        <option>---Select ----</option>
+                                        <option>yes</option>
+                                        <option>no</option>
+                                        </select>
+                                    </span></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter DM </div></td>
+                                    <td bgcolor="#FF0000"><span class="style8">
+                                      <select name="dm">
+                                        <option>---Select ----</option>
+                                        <option>yes</option>
+                                        <option>no</option>
+                                        </select>
+                                    </span></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter CAD </span></td>
+                                    <td bgcolor="#FF0000"><span class="style8">
+                                      <select name="cad">
+                                        <option>---Select ----</option>
+                                        <option>yes</option>
+                                        <option>no</option>
+                                        </select>
+                                    </span></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter Appet </div></td>
+                                    <td bgcolor="#FF0000"><span class="style8">
+                                      <select name="appet">
+                                        <option>--Select ---</option>
+                                        <option>good</option>
+                                        <option>poor</option>
+                                      </select>
+                                    </span></td>
+                                    <td bgcolor="#FF0000"><span class="style9">Enter PE </span></td>
+                                    <td bgcolor="#FF0000"><span class="style8">
+                                      <select name="pe">
+                                        <option>---Select ----</option>
+                                        <option>yes</option>
+                                        <option>no</option>
+                                        </select>
+                                    </span></td>
+                                  </tr>
+                                  <tr>
+                                    <td bgcolor="#FF0000"><div align="center" class="style8">Enter ANE </div></td>
+                                    <td bgcolor="#FF0000"><span class="style8">
+                                      <select name="ane">
+                                        <option>---Select ----</option>
+                                        <option>yes</option>
+                                        <option>no</option>
+                                        </select>
+                                    </span></td>
+                                    <td bgcolor="#00FFFF"><div align="center"><span class="style8">
+                                      <input name="Submit" type="submit" class="style1" value="Predict">
+                                    </span></div></td>
+                                    <td bgcolor="#00FFFF"><div align="center"><span class="style8">
+                                      <input name="Submit2" type="reset" class="style1" value="Reset">
+                                    </span></div></td>
+                                  </tr>
+                                </table>
+                                <p>&nbsp;</p>
+                     </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div class="tweettext">
+                               <table border="5" align="center" bordercolor="#FF00FF">
+                             <tr><td width="286" bgcolor="#0000FF"><div align="center"><span class="style8 style6">Chronic Kidney Disease  Stage Prediction </span></div></td>
+
+                      </tr>
+
+                      <tr>
+
+<td height="68" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{objs}}</div></td>
+
+                        </tr>
+
+
+                      </table>
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
