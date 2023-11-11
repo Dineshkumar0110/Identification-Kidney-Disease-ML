@@ -15,9 +15,13 @@ It provides the comparative analysis of different ML Models
 Conclusion : In this project we have compared the performance of state of art machine learning algorithms along with DNN for classification of CKD for patients having HIV.
 
 ![image](https://github.com/Dineshkumar0110/Identification-Kidney-Disease-ML/assets/114792112/8acd00f2-feb5-48c1-a7cd-b835a45b1860)
+
 ![image](https://github.com/Dineshkumar0110/Identification-Kidney-Disease-ML/assets/114792112/16901ff5-da8e-4438-8f26-7963212f569c)
+
 ![image](https://github.com/Dineshkumar0110/Identification-Kidney-Disease-ML/assets/114792112/89140251-0af4-4eb0-b9d3-4d619e7e61d2)
+
 ![image](https://github.com/Dineshkumar0110/Identification-Kidney-Disease-ML/assets/114792112/39bc8113-08d5-42cb-858e-8a6a78c7c8ea)
+
 ![image](https://github.com/Dineshkumar0110/Identification-Kidney-Disease-ML/assets/114792112/8cf1fd2d-344d-47a2-8e55-48bb1cee883e)
 
 
